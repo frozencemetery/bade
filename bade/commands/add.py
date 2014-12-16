@@ -58,8 +58,8 @@ def command(config, repo, commit, upstream, commit_hash):
             level='info'
         )
         status = (
-            '{basename}\\n - initial commit: {commit_hash}'
-            '\\n\\n'.format(**_locals)
+            '{basename}\n - initial commit: {commit_hash}'
+            '\n\n'.format(**_locals)
         )
         msg = utils.COMMIT_MSG.format(status)
         rc, stdout, stderr = utils.execute(

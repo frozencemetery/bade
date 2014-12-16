@@ -52,8 +52,8 @@ def command(config, repo, module, new_commit, commit):
             level='info'
         )
         status = (
-            '{module}\\n - old commit: {old_commit}\\n'
-                ' - new commit: {new_commit}\\n\\n'.format(**_locals)
+            '{module}\n - old commit: {old_commit}\n'
+                ' - new commit: {new_commit}\n\n'.format(**_locals)
         )
         _locals['msg'] = utils.COMMIT_MSG.format(status)
         rc, stdout, stderr = utils.execute(

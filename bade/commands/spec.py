@@ -98,9 +98,9 @@ def command(config, repo, version, release, old, output, template):
     commit = info['commit'] if 'commit' in info else info['ref']
 
     # generate message for a tag
-    msg = '{0}-{1}\\n'.format(version, release)
+    msg = '{0}-{1}\n'.format(version, release)
     for module, info in puppetfile.items():
-        msg += '{0}{1}\\n'.format(
+        msg += '{0}{1}\n'.format(
             module, format_rjust(commit, module, 10)
         )
 

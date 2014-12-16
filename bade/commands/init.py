@@ -116,7 +116,7 @@ def command(config, repo, commit):
                 puppetfile[mod]['ref']
             )
             status += (
-                '{mod}\\n - initial commit: {commit}\\n\\n'.format(
+                '{mod}\n - initial commit: {commit}\n\n'.format(
                     mod=mod, commit=commit
                 )
             )
