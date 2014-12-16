@@ -66,5 +66,5 @@ def command(config, repo, commit, upstream, commit_hash):
             'cd {repo} && '
             'git add {basename} --ignore-errors && '
             'git add Puppetfile && '
-            'git commit -m $\'{msg}\''.format(**locals())
+            'git commit -m \'{msg}\''.format(**locals())
         )

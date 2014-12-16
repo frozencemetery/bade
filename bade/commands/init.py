@@ -124,5 +124,5 @@ def command(config, repo, commit):
         rc, stdout, stderr = utils.execute(
             'cd {repo} && '
             'git add {paths} --ignore-errors && '
-            'git commit -m $\'{msg}\''.format(**locals())
+            'git commit -m \'{msg}\''.format(**locals())
         )
